@@ -22,7 +22,7 @@ jobs:
       with:
         node-version: ${{ matrix.node-vetsion }}
     - run: npm i
-    - run: npm run dev
+    - run: npm run build
 
     - name: Deploy 🚀
       uses: JamesIves/github-pages-deploy-action@releases/v3
