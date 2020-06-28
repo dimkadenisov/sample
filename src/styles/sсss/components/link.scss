@@ -1,0 +1,10 @@
+.link {
+	color: $gray-600;
+	font-size: 18px;
+	text-decoration: none;
+
+	&:hover,
+	&:focus {
+		text-decoration: underline;
+	}
+}

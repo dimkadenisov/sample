@@ -1,0 +1,6 @@
+mixin language-list(props = {})
+  include language
+
+  ul.language-list&attributes(attributes)
+    li.language-list__item
+      +language({lang: 'en', iconId: 'english'})

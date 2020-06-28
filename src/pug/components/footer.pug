@@ -1,0 +1,9 @@
+mixin footer(props = {})
+  include copyright
+  include language-select
+
+  .footer&attributes(attributes)
+    .container
+      .footer__inner
+        +copyright
+        +language-select

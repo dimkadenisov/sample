@@ -1,0 +1,11 @@
+mixin user-avatar(props = {})
+  include avatar
+
+  - const {name = 'Анастасия', surname = 'Татарникова' } = props;
+  - const letter = surname[0];
+
+  .user-avatar&attributes(attributes)
+    +avatar({letter: letter})(class="avatar_color_gray-600 user-avatar_avatar")
+    .user-avatar__text
+      .text-bold-24= name
+      .text-bold-24= surname

@@ -1,0 +1,9 @@
+mixin user-actions-list(props = {})
+  include user-action
+
+  - const { items } = props;
+
+  ul.user-actions-list&attributes(attributes)
+    each item in items
+      li.user-actions-list__item
+        +user-action(item)

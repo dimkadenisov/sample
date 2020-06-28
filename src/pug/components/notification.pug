@@ -1,0 +1,22 @@
+mixin notification(props = {})
+  include avatar
+  include avatar-name
+  include notification-date
+  include notification-message
+
+  -
+    const {
+      avatarAttrs,
+      avatarImg = null,
+      avatarName = 'Digital Earth',
+      notificationDate = '11:40',
+      notificationHeading = 'Анализ затопления',
+      notificationText = 'Анализ затопления города включат в себя выделение следующих категорий зданий'
+    } = props;
+
+  .notification&attributes(attributes)
+    .notification__header
+      +avatar({bgImgUrl: avatarImg})(class="avatar_size_s")&attributes(avatarAttrs)
+      +avatar-name(class="avatar-name_size_s")= avatarName
+      +notification-date= notificationDate
+    +notification-message({heading: notificationHeading, text: notificationText})

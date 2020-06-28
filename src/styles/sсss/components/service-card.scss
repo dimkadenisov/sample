@@ -1,0 +1,112 @@
+.service-card {
+	display: block;
+	position: relative;
+	padding-top: 80%;
+	background-color: $white;
+	border-radius: 10px;
+	box-shadow: 0 10px 25px 0 rgba($black, 0.13);
+	overflow: hidden;
+	text-decoration: none;
+	cursor: pointer;
+	transition: transform 0.2s;
+
+	&__content {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		position: absolute;
+		top: 0;
+		left: 0;
+		height: 100%;
+		width: 100%;
+		max-height: 100%;
+		padding: 20px 30px 25px;
+		transition: max-height 0.3s;
+	}
+
+	.service-card-name {
+		flex-shrink: 0;
+		width: 100%;
+		margin-bottom: 20px;
+	}
+
+	.products-block {
+		flex-shrink: 0;
+	}
+
+	.service-card-img {
+		margin-bottom: 12px;
+
+		&_cover {
+			max-width: none;
+			width: calc(100% + 2 * 30px);
+		}
+	}
+
+	.buttons-group {
+		width: 100%;
+	}
+
+	&:hover,
+	&:focus {
+		box-shadow: 0 10px 30px 0 rgba($black, 0.2);
+		transform: translateY(-4px);
+	}
+
+	&_size_m {
+		padding-top: calc(96% + 10px);
+
+		.service-card-img {
+			padding-top: 66%;
+		}
+	}
+
+	&_size_l {
+		padding-top: calc(120% + 10px);
+
+		.service-card-img {
+			padding-top: calc(100% - 15px);
+		}
+	}
+
+	&_size_xl {
+		padding-top: calc(144% + 10px);
+
+		.service-card-img {
+			padding-top: 124%;
+		}
+	}
+
+	&_opened {
+		padding-top: 0;
+
+		.service-card__content {
+			position: relative;
+			height: auto;
+			max-height: 5000px;
+		}
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.service-card {
+		padding-top: calc(120% + 10px);
+
+		.service-card-img {
+			padding-top: calc(100% - 30px);
+		}
+
+		&_opened {
+			padding-top: 0;
+		}
+	}
+}
+
+@media screen and (max-width: 575px) {
+	.service-card {
+		&__content {
+			padding-right: 20px;
+			padding-left: 20px;
+		}
+	}
+}

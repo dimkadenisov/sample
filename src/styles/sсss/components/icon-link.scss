@@ -1,0 +1,18 @@
+.icon-link {
+	display: flex;
+	color: $gray-800;
+	font-size: 18px;
+	text-decoration: none;
+
+	&__icon {
+		width: 20px;
+		height: 20px;
+		margin-right: 10px;
+		color: $violet-700;
+	}
+
+	&:hover,
+	&:focus {
+		text-decoration: underline;
+	}
+}

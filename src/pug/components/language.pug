@@ -1,0 +1,8 @@
+mixin language(props = {})
+
+  - const { iconId = 'ru', lang = ru } = props;
+
+  .language&attributes(attributes)
+    svg.language__icon
+      use(xlink:href=`#${iconId}`)
+    span.language__text= lang

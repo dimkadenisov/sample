@@ -1,0 +1,21 @@
+.heading-1 {
+	max-width: 400px;
+	margin-right: auto;
+	margin-bottom: 15px;
+	margin-left: auto;
+	color: $gray-800;
+	font-size: 36px;
+	text-align: center;
+}
+
+@media screen and (max-width: 767px) {
+	.heading-1 {
+		font-size: 28px;
+	}
+}
+
+@media screen and (max-width: 575px) {
+	.heading-1 {
+		font-size: 24px;
+	}
+}

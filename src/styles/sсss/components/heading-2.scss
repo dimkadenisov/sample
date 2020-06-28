@@ -1,0 +1,11 @@
+.heading-2 {
+	margin-bottom: 30px;
+	color: $gray-800;
+	font-size: 30px;
+}
+
+@media screen and (max-width: 575px) {
+	.heading-2 {
+		font-size: 22px;
+	}
+}

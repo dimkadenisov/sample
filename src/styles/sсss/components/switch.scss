@@ -1,0 +1,79 @@
+.switch {
+	display: inline-block;
+	position: relative;
+	background-color: $gray-200;
+	border-radius: 17px;
+	cursor: pointer;
+	overflow: hidden;
+	transition: background-color 0.2s ease;
+
+	&__label {
+		display: inline-block;
+		position: relative;
+		padding: 7px 16px 6px;
+		border-radius: 17px;
+		line-height: 1.5;
+		transition: color 0.3s ease;
+		z-index: 2;
+
+		&:after {
+			content: '';
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			border-radius: 17px;
+			transition: transform 0.3s ease;
+			z-index: -1;
+		}
+	}
+
+	&__input {
+		& ~ .switch__label {
+			&:first-of-type {
+				color: $white;
+
+				&:after {
+					background-color: $violet-700;
+					transform: translateX(0);
+				}
+			}
+
+			&:last-of-type {
+				color: $gray-400;
+
+				&:after {
+					background-color: transparent;
+					transform: translateX(-100%);
+				}
+			}
+		}
+
+		&:checked {
+			& ~ .switch__label {
+				&:first-of-type {
+					color: $gray-400;
+
+					&:after {
+						background-color: transparent;
+						transform: translateX(100%);
+					}
+				}
+
+				&:last-of-type {
+					color: $white;
+
+					&:after {
+						background-color: $violet-700;
+						transform: translateX(0);
+					}
+				}
+			}
+		}
+	}
+
+	&:hover {
+		background-color: darken($gray-200, 5%);
+	}
+}

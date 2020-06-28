@@ -1,0 +1,43 @@
+.visually-hidden {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	padding: 0;
+	bottom: 0;
+	overflow: hidden;
+	clip: rect(0 0 0 0);
+}
+
+.visibility_hidden {
+	visibility: hidden;
+	pointer-events: none;
+}
+
+.overflow {
+	&_hidden {
+		overflow: hidden;
+	}
+
+	&-y {
+		&_auto {
+			overflow-y: auto;
+		}
+
+		&_visible {
+			overflow-y: visible;
+		}
+
+		&_hidden {
+			overflow-y: hidden;
+		}
+	}
+}
+
+.d_flex {
+	display: flex;
+}
+
+.d_none {
+	display: none;
+}

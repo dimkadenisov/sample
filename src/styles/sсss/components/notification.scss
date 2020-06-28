@@ -1,0 +1,28 @@
+.notification {
+	display: block;
+	padding-top: 14px;
+	padding-right: 29px;
+	padding-bottom: 16px;
+	padding-left: 38px;
+	background-color: $white;
+	text-decoration: none;
+
+	&__header {
+		display: flex;
+		align-items: center;
+		margin-bottom: 15px;
+
+		.avatar {
+			margin-right: 12px;
+		}
+		.avatar-name {
+			flex-grow: 1;
+			margin-right: 12px;
+		}
+	}
+
+	&:hover,
+	&:focus {
+		background-color: $gray-200;
+	}
+}

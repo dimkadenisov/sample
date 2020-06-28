@@ -1,0 +1,10 @@
+mixin breadcrumbs(props = {})
+
+  .breadcrumbs&attributes(attributes)
+    span.breadcrumbs__item
+      a(href="#").breadcrumbs__link Главная
+    span.breadcrumbs__item
+      a(href="#").breadcrumbs__link Под главной
+    span.breadcrumbs__item
+      a(href="#").breadcrumbs__link Под предыдущей
+    span.breadcrumbs__item Каталог

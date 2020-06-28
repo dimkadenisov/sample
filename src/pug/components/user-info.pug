@@ -1,0 +1,11 @@
+mixin user-info(props = {})
+  include avatar
+  include text-bold-18
+  include email
+
+  .user-info&attributes(attributes)
+    +avatar({letter: 'A'})
+    +text-bold-18
+      |Максим Ивановский
+    +email
+      |maxiv@gmail.com

@@ -1,0 +1,12 @@
+.collapse-heading {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-bottom: 0px;
+	padding: 17px 30px;
+	color: $gray-800;
+	font-size: 24px;
+	font-weight: 700;
+	cursor: pointer;
+	transition: marginBottom 1s linear;
+}

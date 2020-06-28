@@ -1,0 +1,11 @@
+mixin products-list(props = {})
+  include product
+
+  - const { products } = props;
+
+  ul.products-list&attributes(attributes)
+    li.products-list__item
+      +product({iconId: 'tree', text: 'Активный пункт'})(class="product_active")
+    each product in products
+      li.products-list__item
+        +product({iconId: product.iconId, text: product.text})

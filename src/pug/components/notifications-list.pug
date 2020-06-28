@@ -1,0 +1,10 @@
+mixin notifications-list(props = {})
+  include notification
+
+  ul.notifications-list&attributes(attributes)
+    li.notifications-list__item
+      +notification({avatarAttrs: {class: "avatar_color_mint-300"}})
+    li.notifications-list__item
+      +notification({avatarAttrs: {class: "avatar_color_green-300"}})
+    li.notifications-list__item
+      +notification({avatarAttrs: {class: "avatar_color_yellow-300"}})

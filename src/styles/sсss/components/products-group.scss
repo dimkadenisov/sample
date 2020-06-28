@@ -1,0 +1,56 @@
+.products-group {
+	margin-bottom: 0;
+	padding-bottom: 1px;
+
+	.products-list {
+		margin-left: 38px;
+	}
+
+	&_opened {
+		.products-group-name {
+			margin-bottom: 10px;
+		}
+	}
+
+	&_green-300 {
+		.product_active {
+			color: $green-300;
+		}
+	}
+
+	&_mint-300 {
+		.product_active {
+			color: $mint-300;
+		}
+	}
+
+	&_crimson-300 {
+		.product_active {
+			color: $crimson-300;
+		}
+	}
+
+	&_burgundy-300 {
+		.product_active {
+			color: $burgundy-300;
+		}
+	}
+
+	&_yellow-300 {
+		.product_active {
+			color: $yellow-300;
+		}
+	}
+
+	&_salmon-300 {
+		.product_active {
+			color: $salmon-300;
+		}
+	}
+
+	&_blue-300 {
+		.product_active {
+			color: $blue-300;
+		}
+	}
+}

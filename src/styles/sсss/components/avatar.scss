@@ -1,0 +1,72 @@
+.avatar {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+	width: 66px;
+	height: 66px;
+	background-color: $gray-300;
+	border-radius: 50%;
+	overflow: hidden;
+
+	&__img {
+		width: 100%;
+		height: 100%;
+		background-position: center center;
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
+
+	&__text {
+		color: $white;
+		font-size: 24px;
+		font-weight: 700;
+		text-align: center;
+		text-transform: uppercase;
+	}
+
+	&_size_s {
+		width: 23px;
+		height: 23px;
+
+		.avatar__text {
+			font-size: 10px;
+		}
+	}
+
+	&_color_gray-600 {
+		background-color: $gray-600;
+	}
+
+	&_color_green-300 {
+		background-color: $green-300;
+	}
+
+	&_color_mint-300 {
+		background-color: $mint-300;
+	}
+
+	&_color_crimson-300 {
+		background-color: $crimson-300;
+	}
+
+	&_color_burgundy-300 {
+		background-color: $burgundy-300;
+	}
+
+	&_color_yellow-300 {
+		background-color: $yellow-300;
+	}
+
+	&_color_salmon-300 {
+		background-color: $salmon-300;
+	}
+
+	&_color_blue-300 {
+		background-color: $blue-300;
+	}
+
+	&_color_violet-300 {
+		background-color: $violet-300;
+	}
+}

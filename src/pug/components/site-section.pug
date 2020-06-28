@@ -1,0 +1,8 @@
+mixin site-section(props = {})
+  include round-icon
+
+  - const { iconId, text } = props;
+
+  a(href="#").site-section&attributes(attributes)
+    +round-icon({iconId: iconId})
+    span.site-section__text= text

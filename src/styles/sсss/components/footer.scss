@@ -1,0 +1,10 @@
+.footer {
+	margin-top: 15px;
+	margin-bottom: 55px;
+
+	&__inner {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+}

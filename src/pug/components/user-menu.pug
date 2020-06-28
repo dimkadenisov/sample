@@ -1,0 +1,25 @@
+mixin user-menu(props = {})
+  include icon-button
+  include user-info
+  include user-actions-list
+
+  .user-menu&attributes(attributes)
+    +icon-button({iconId: 'pencil'})(class="icon-button_lightgray")
+    +user-info
+    +user-actions-list({items: [
+      {
+        iconId: 'user',
+        heading: 'Личный кабинет',
+        description: 'Полная информация о пользователе'
+      },
+      {
+        iconId: 'shopping-basket',
+        heading: 'Заказы',
+        description: 'Текущие заказы'
+      },
+      {
+        iconId: 'logout',
+        heading: 'Выход',
+        description: 'Выйти из учетной записи'
+      },
+    ]})

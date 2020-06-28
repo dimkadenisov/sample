@@ -1,0 +1,9 @@
+.menu-list {
+	display: flex;
+
+	&__item {
+		&:nth-last-child(n + 2) {
+			margin-right: 40px;
+		}
+	}
+}

@@ -1,0 +1,8 @@
+.email {
+	color: $gray-600;
+	text-decoration: none;
+
+	&:hover {
+		text-decoration: underline;
+	}
+}

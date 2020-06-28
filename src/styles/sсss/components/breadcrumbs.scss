@@ -1,0 +1,43 @@
+.breadcrumbs {
+	margin-bottom: 20px;
+	font-size: 18px;
+
+	&__item {
+		display: inline-block;
+		color: $gray-300;
+
+		&:not(:last-child) {
+			margin-right: 0.65em;
+
+			&::after {
+				content: '>';
+				display: inline-block;
+				margin-left: 0.65em;
+				color: $gray-600;
+			}
+		}
+	}
+
+	&__link {
+		display: inline-block;
+		padding-top: 10px;
+		padding-bottom: 10px;
+		color: $gray-600;
+		text-decoration: none;
+
+		&:hover,
+		&:focus {
+			color: $gray-800;
+			text-decoration: underline;
+		}
+	}
+}
+
+@media screen and (max-width: 575px) {
+	.breadcrumbs {
+		&__link {
+			padding-top: 5px;
+			padding-bottom: 5px;
+		}
+	}
+}

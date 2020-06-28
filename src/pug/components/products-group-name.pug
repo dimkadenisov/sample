@@ -1,0 +1,14 @@
+mixin products-group-name(props = {})
+  include products-counter
+
+  - const { counter, name, } = props;
+  - const formattedName = name.split(' ');
+
+  .products-group-name&attributes(attributes)
+    if counter
+      +products-counter= counter
+    span.products-group-name__text
+      each chunk, index in formattedName
+        span= chunk
+        if formattedName.length > index + 1
+          br

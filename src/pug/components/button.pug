@@ -1,0 +1,12 @@
+mixin button(props = {})
+
+  - const { tag = 'button', size, color } = props;
+  -
+    const rootClassList = [
+      size && `button_size_${size}`,
+      color && `button_color_${color}`,
+    ];
+
+  #{tag}.button(class= rootClassList)&attributes(attributes)
+    span.button__text
+      block

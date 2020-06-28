@@ -1,0 +1,18 @@
+extends ../components/page
+include ../components/services-list
+include ../components/heading-1
+include ../components/heading-description
+
+block title
+  |Главная страница
+
+block content
+  +header
+  main
+    .container
+      section
+        +heading-1
+          |Уникальные сервисы
+        +heading-description
+          |на основе данных  дистанционного зондирования Земли из космоса
+        +services-list

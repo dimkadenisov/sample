@@ -1,0 +1,28 @@
+include header
+include footer
+
+<!DOCTYPE html>
+html(lang="ru")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1")
+    meta(http-equiv="X-UA-Compatible" content="ie=edge")
+
+    link(href="styles/main.css" rel="stylesheet" type="text/css")
+    block link
+
+    title
+      block title
+
+  body
+    object(type="image/svg+xml" style="width: 0; height: 0; display: none;")
+      include ../../assets/icons/sprite/symbol/svg/sprite.symbol.svg
+    block content
+    +footer
+
+    script(src="scripts/libraries/oldBrowsersDetection.js")
+    script(src="scripts/libraries/oldBrowsersPolyfills.js")
+    script(src="https://polyfill.io/v3/polyfill.min.js?features=Array.prototype.find,Promise,Object.assign")
+    script(src="scripts/libraries/objectFitPolyfill.min.js")
+    script(src="scripts/libraries/popper.min.js")
+    script(src="scripts/script.js")

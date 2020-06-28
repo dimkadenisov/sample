@@ -1,0 +1,7 @@
+mixin round-icon(props = {})
+
+  - const { iconId } = props;
+
+  .round-icon&attributes(attributes)
+    svg.round-icon__svg
+      use(xlink:href=`#${iconId}`)

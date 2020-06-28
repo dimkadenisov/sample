@@ -1,0 +1,41 @@
+.burger-button {
+	display: none;
+	color: $gray-800;
+	font-size: 30px;
+	line-height: 1;
+	cursor: pointer;
+	z-index: 2;
+
+	&::after {
+		content: '☰';
+		display: block;
+		text-align: center;
+	}
+
+	&:hover,
+	&:focus {
+		color: $primary;
+	}
+
+	&_opened {
+		position: absolute;
+		right: 40px;
+		font-size: 24px;
+
+		&::after {
+			content: '✕';
+		}
+	}
+}
+
+@media (-ms-high-contrast: none) {
+	.burger-button {
+		margin-left: auto;
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.burger-button {
+		display: inline-block;
+	}
+}

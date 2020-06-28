@@ -1,0 +1,20 @@
+mixin header(props = {})
+  include logo
+  include menu-list
+  include menu-list
+  include burger-button
+  include burger-menu
+  include icon-buttons-list
+  include user-avatar
+  include icon-link
+
+  .header&attributes(attributes)
+    .container
+      .header__inner
+        +logo
+        +burger-button
+        +burger-menu
+          +user-avatar
+          +menu-list({component: 'icon-link', componentProps: [{iconId: 'user', text: 'Личный кабинет'}, {iconId: 'shopping-basket', text: 'Заказы'}, {iconId: 'logout', text: 'Выход'}]})
+          +menu-list({component: 'link', componentProps: [{text: 'О проекте'}, {text: 'Контакты'}]})
+          +icon-buttons-list

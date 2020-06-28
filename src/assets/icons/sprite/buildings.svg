@@ -1,0 +1,32 @@
+<svg fill="currentColor" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+		<path class="st0" d="M0,490.7v10.7c0,5.9,4.8,10.7,10.7,10.7h490.7c5.9,0,10.7-4.8,10.7-10.7v-10.7L0,490.7L0,490.7z"/>
+		<path class="st0" d="M202.7,192H32c-5.9,0-10.7,4.8-10.7,10.7v298.7c0,5.9,4.8,10.7,10.7,10.7h170.7c5.9,0,10.7-4.8,10.7-10.7
+			V202.7C213.3,196.8,208.6,192,202.7,192z M192,490.7H42.7V213.3H192V490.7z"/>
+		<path class="st0" d="M480,64H309.3c-5.9,0-10.7,4.8-10.7,10.7v426.7c0,5.9,4.8,10.7,10.7,10.7H480c5.9,0,10.7-4.8,10.7-10.7V74.7
+			C490.7,68.8,485.9,64,480,64z M469.3,490.7H320V85.3h149.3V490.7z"/>
+		<path class="st0" d="M405.3,0h-288c-5.9,0-10.7,4.8-10.7,10.7v160H128V21.3h266.7v21.3H416v-32C416,4.8,411.2,0,405.3,0z"/>
+		<rect x="64" y="234.7" class="st0" width="21.3" height="192"/>
+		<rect x="106.7" y="234.7" class="st0" width="21.3" height="192"/>
+		<rect x="149.3" y="234.7" class="st0" width="21.3" height="192"/>
+		<rect x="309.3" y="117.3" class="st0" width="117.3" height="21.3"/>
+		<rect x="309.3" y="170.7" class="st0" width="117.3" height="21.3"/>
+		<rect x="309.3" y="224" class="st0" width="117.3" height="21.3"/>
+		<rect x="309.3" y="277.3" class="st0" width="117.3" height="21.3"/>
+		<rect x="309.3" y="330.7" class="st0" width="117.3" height="21.3"/>
+		<rect x="309.3" y="384" class="st0" width="117.3" height="21.3"/>
+		<rect x="160" y="53.3" class="st0" width="21.3" height="32"/>
+		<rect x="160" y="117.3" class="st0" width="21.3" height="32"/>
+		<rect x="202.7" y="117.3" class="st0" width="21.3" height="32"/>
+		<rect x="202.7" y="53.3" class="st0" width="21.3" height="32"/>
+		<rect x="245.3" y="53.3" class="st0" width="21.3" height="32"/>
+		<rect x="245.3" y="117.3" class="st0" width="21.3" height="32"/>
+		<rect x="245.3" y="181.3" class="st0" width="21.3" height="32"/>
+		<rect x="245.3" y="245.3" class="st0" width="21.3" height="32"/>
+		<rect x="245.3" y="309.3" class="st0" width="21.3" height="32"/>
+		<rect x="245.3" y="373.3" class="st0" width="21.3" height="32"/>
+		<path class="st0" d="M405.3,437.3H352c-5.9,0-10.7,4.8-10.7,10.7v53.3h21.3v-42.7h32v42.7H416V448
+			C416,442.1,411.2,437.3,405.3,437.3z"/>
+		<path class="st0" d="M160,448H74.7c-5.9,0-10.7,4.8-10.7,10.7v42.7h21.3v-32h64v32h21.3v-42.7C170.7,452.8,165.9,448,160,448z"/>
+
+</svg>

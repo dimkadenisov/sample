@@ -1,0 +1,8 @@
+mixin not-found-block(props = {})
+  include button
+
+  .not-found-block&attributes(attributes)
+    h1.not-found-block__heading 404
+    span.not-found-block__description Упс! Что-то пошло не так.
+    +button({tag: 'a'})(class="button_color_primary")
+      |На главную

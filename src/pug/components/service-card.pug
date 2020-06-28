@@ -1,0 +1,27 @@
+mixin service-card(props = {})
+  include service-card-name
+  include service-card-img
+  include products-group
+  include products-block
+  include buttons-group
+  include button
+
+  - const { imgObjectFit, imgSrc, name, productsGroups, productsGroupsAttrs } = props;
+  -
+    const rootClasses = [
+      imgObjectFit === 'cover' && 'service-card_cover',
+      size && `service-card_size_${size}`,
+    ];
+
+  .service-card(class= rootClasses)&attributes(attributes)
+    .service-card__content
+      +service-card-img({imgObjectFit: imgObjectFit})(src= imgSrc, alt= name)
+      +service-card-name= name
+      +products-block
+        each props in productsGroups
+          +products-group(props)&attributes(productsGroupsAttrs)
+      +buttons-group(class="visually-hidden")
+        +button({tag: 'a', size: 's', color: 'violet'})(href="#")
+          |Открыть карту
+        +button({tag: 'a', size: 's'})(href="#")
+          |Открыть дашборд

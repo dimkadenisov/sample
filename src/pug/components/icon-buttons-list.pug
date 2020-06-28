@@ -1,0 +1,22 @@
+mixin icon-buttons-list(props = {})
+  include button
+  include icon-button
+  include icon-button-menu
+  include messages-menu
+  include site-sections-menu
+  include user-menu
+
+  ul.icon-buttons-list&attributes(attributes)
+    li.icon-buttons-list__item
+      +icon-button({tag: 'a', iconId: 'mail', counter: '5'})(href="#")
+      +icon-button-menu
+        +messages-menu
+    li.icon-buttons-list__item
+      +icon-button({tag: 'a', iconId: 'grid'})(href="#")
+      +icon-button-menu
+        +site-sections-menu
+    li.icon-buttons-list__item
+      +icon-button({tag: 'a'})(class="icon-button_gray-600" href="#")
+        |Т
+      +icon-button-menu
+        +user-menu

@@ -1,0 +1,9 @@
+.user-avatar {
+	display: flex;
+	align-items: center;
+
+	&_avatar {
+		flex-shrink: 0;
+		margin-right: 12px;
+	}
+}

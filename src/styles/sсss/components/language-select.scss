@@ -1,0 +1,23 @@
+.language-select {
+	position: relative;
+
+	&__current {
+		border-radius: 5px;
+		overflow: hidden;
+	}
+
+	.language-list {
+		position: absolute;
+		bottom: calc(100% - 1px);
+		left: 0;
+		transform-origin: bottom center;
+		transform: scaleY(0);
+		transition: transform 0.2s ease;
+	}
+
+	&_opened {
+		.language-list {
+			transform: scaleY(1);
+		}
+	}
+}

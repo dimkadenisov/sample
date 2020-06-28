@@ -1,0 +1,57 @@
+mixin site-sections-menu(props = {})
+  include switch
+  include button
+  include site-sections-list
+
+  .site-sections-menu&attributes(attributes)
+    +switch({selected: 'Карта', unselected: 'Дашбоард'})
+    .switch-tab
+      +site-sections-list({
+        items: [
+          {
+            iconId: 'trees',
+            text: 'Лес-контроль',
+          },
+          {
+            iconId: 'plant',
+            text: 'Эко-мониторинг',
+          },
+          {
+            iconId: 'buildings',
+            text: 'Строй-контроль',
+          },
+          {
+            iconId: 'ear',
+            text: 'Сельхоз-мониторинг',
+          },
+          {
+            iconId: 'fire',
+            text: 'Чрезвычайные ситуации',
+          },
+          {
+            iconId: 'break',
+            text: 'Нарушенные земли',
+          },
+          {
+            iconId: 'buldozer',
+            text: 'Карьеры',
+          },
+        ]
+      })
+    .switch-tab.d_none
+      +site-sections-list({
+        items: [
+          {
+            iconId: 'trees',
+            text: 'Лес-контроль',
+          },
+          {
+            iconId: 'plant',
+            text: 'Эко-мониторинг',
+          },
+          {
+            iconId: 'buildings',
+            text: 'Строй-контроль',
+          },
+        ]
+      })

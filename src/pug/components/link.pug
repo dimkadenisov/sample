@@ -1,0 +1,6 @@
+mixin link(props = {})
+
+  - const { text } = props;
+
+  a(href="#").link&attributes(attributes)
+    span.link__text= text

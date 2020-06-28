@@ -1,0 +1,59 @@
+.icon-button {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+	width: 32px;
+	height: 32px;
+	margin: 0;
+	padding: 0;
+	background-color: transparent;
+	border-radius: 50%;
+	border: none;
+	color: $white;
+	cursor: pointer;
+	font-size: 18px;
+	font-weight: 700;
+	line-height: 32px;
+	text-decoration: none;
+	transition: background-color 0.2s ease;
+
+	&__icon {
+		width: 18px;
+		height: 18px;
+		color: $gray-600;
+	}
+
+	&:hover,
+	&:focus {
+		background-color: rgba($gray-300, 0.5);
+	}
+
+	&_primary {
+		background-color: $primary;
+
+		.icon-button__icon {
+			color: $white;
+		}
+
+		&:hover,
+		&:focus {
+			background-color: $primary-light;
+		}
+	}
+
+	&_lightgray {
+		.icon-button__icon {
+			color: $gray-400;
+		}
+
+		&:hover,
+		&:focus {
+			background-color: darken($gray-200, 1%);
+		}
+	}
+
+	&_gray-600 {
+		background-color: $gray-600;
+	}
+}

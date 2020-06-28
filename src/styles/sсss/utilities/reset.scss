@@ -1,0 +1,69 @@
+html {
+	color: $gray-600;
+	font-family: $PTSans;
+	font-size: 14px;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	background-color: $gray-200;
+}
+
+ul,
+ol {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+body {
+	position: relative;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	font-variant-numeric: lining-nums;
+}
+
+fieldset {
+	border: none;
+}
+
+input {
+	&::-moz-placeholder {
+		opacity: 1;
+	}
+
+	&::placeholder {
+		opacity: 1;
+	}
+}
+
+input[type='number'] {
+	-moz-appearance: textfield;
+
+	&::-webkit-outer-spin-button,
+	&::-webkit-inner-spin-button {
+		-webkit-appearance: none;
+		margin: 0;
+	}
+}
+
+select {
+	appearance: none;
+}
+
+select::-ms-expand {
+	display: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 p {
+	margin-top: 0;
+}

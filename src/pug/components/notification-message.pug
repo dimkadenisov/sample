@@ -1,0 +1,7 @@
+mixin notification-message(props = {})
+
+  - const { heading, text } = props;
+
+  a(href="#").notification-message&attributes(attributes)
+    span.notification-message__heading= heading
+    span.notification-message__text= text

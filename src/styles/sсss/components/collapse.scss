@@ -1,0 +1,35 @@
+.collapse {
+	border-top: 1px solid transparent;
+	border-bottom: 1px solid transparent;
+
+	&__inner {
+		padding-right: 30px;
+		padding-left: 30px;
+		max-height: 0;
+		overflow: hidden;
+		transition: max-height 0.25s ease, padding-top 0.25s ease;
+	}
+
+	.products-group {
+		padding-top: 8px;
+	}
+
+	.products-list {
+		margin-left: 28px;
+	}
+
+	&_opened {
+		margin-bottom: 23px;
+		padding-bottom: 12px;
+		border-top-color: $gray-200;
+		border-bottom-color: $gray-200;
+
+		.collapse-heading__triangle {
+			transform: rotate(180deg);
+		}
+
+		.collapse__inner {
+			max-height: none;
+		}
+	}
+}

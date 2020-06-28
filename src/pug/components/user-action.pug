@@ -1,0 +1,10 @@
+mixin user-action(props = {})
+
+  - const { iconId, heading, description } = props;
+
+  a(href="#").user-action&attributes(attributes)
+    svg.user-action__icon
+      use(xlink:href=`#${iconId}`)
+    span.user-action__text
+      span.user-action__heading= heading
+      span.user-action__description= description

@@ -1,0 +1,5 @@
+mixin heading-2(props = {})
+  - const { tag = 'h2' } = props;
+
+  #{tag}.heading-2&attributes(attributes)
+    block

@@ -1,0 +1,18 @@
+.messages-menu {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding-top: 38px;
+
+	.switch {
+		margin-bottom: 12px;
+	}
+
+	.notifications-list {
+		margin-bottom: 20px;
+	}
+
+	.button {
+		margin-bottom: 43px;
+	}
+}

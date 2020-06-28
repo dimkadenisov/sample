@@ -1,0 +1,20 @@
+.content {
+	align-self: flex-start;
+	flex-basis: 68%;
+	flex-grow: 1;
+	margin-bottom: 40px;
+	padding-top: 35px;
+	padding-right: 45px;
+	padding-bottom: 40px;
+	padding-left: 45px;
+	border-radius: 10px;
+	background-color: $white;
+	overflow: hidden;
+}
+
+@media screen and (max-width: 575px) {
+	.content {
+		padding-right: 25px;
+		padding-left: 25px;
+	}
+}

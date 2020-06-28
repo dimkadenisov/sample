@@ -1,0 +1,32 @@
+.icon-button-menu {
+	width: 350px;
+	background-color: $white;
+	border-radius: 10px;
+	box-shadow: 0 14px 38px 0 rgba($black, 0.04);
+}
+
+[data-popper-arrow] {
+	width: 18px;
+	height: 15px;
+	margin-top: -15px;
+	overflow: hidden;
+
+	&::after {
+		content: '';
+		display: block;
+		position: absolute;
+		top: 7px;
+		left: 50%;
+		width: 17px;
+		height: 17px;
+		background-color: $white;
+		border-top-left-radius: 3px;
+		transform: translateX(-50%) scale(0.75, 1.25) rotate(45deg);
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.icon-button-menu {
+		display: none;
+	}
+}

@@ -1,0 +1,9 @@
+mixin site-sections-list(props = {})
+  include site-section
+
+  - const { items } = props;
+
+  ul.site-sections-list&attributes(attributes)
+    each item in items
+      li.site-sections-list__item
+        +site-section(item)

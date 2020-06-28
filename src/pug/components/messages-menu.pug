@@ -1,0 +1,13 @@
+mixin messages-menu(props = {})
+  include switch
+  include notifications-list
+  include button
+
+  .messages-menu&attributes(attributes)
+    +switch({selected: 'Входящие', unselected: 'Прочитано'})
+    .switch-tab
+      +notifications-list
+    .switch-tab.d_none
+      +notifications-list
+    +button({tag: 'a'})(class="button_color_primary")
+      |Показать все

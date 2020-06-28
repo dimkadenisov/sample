@@ -1,0 +1,16 @@
+.notification-message {
+	line-height: 1.5;
+	text-decoration: none;
+
+	&__heading {
+		display: block;
+		color: $gray-800;
+	}
+
+	&__text {
+		display: block;
+		max-height: 38px;
+		color: rgba($gray-600, 0.5);
+		overflow: hidden;
+	}
+}

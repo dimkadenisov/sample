@@ -1,0 +1,9 @@
+mixin switch(props = {})
+
+  - const { selected, unselected } = props;
+
+  label.switch&attributes(attributes)
+    input(type="checkbox").visually-hidden.switch__input
+    div.switch__background
+    span.switch__label= selected
+    span.switch__label= unselected

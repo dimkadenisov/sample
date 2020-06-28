@@ -1,0 +1,29 @@
+.user-action {
+	display: flex;
+	align-items: center;
+	padding: 16px 27px 12px;
+	text-decoration: none;
+
+	&__icon {
+		width: 26px;
+		height: 26px;
+		margin-right: 10px;
+		color: $violet-700;
+	}
+
+	&__heading {
+		display: block;
+		color: $gray-800;
+		font-size: 16px;
+		line-height: 1.5;
+	}
+
+	&__description {
+		color: $gray-600;
+	}
+
+	&:hover,
+	&:focus {
+		background-color: $gray-200;
+	}
+}

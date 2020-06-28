@@ -1,0 +1,29 @@
+.header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	background-color: $gray-200;
+	border-bottom: 1px solid rgba($gray-250, 0.2);
+	z-index: 3;
+
+	&__inner {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+
+	&_scrolled {
+		background-color: $white;
+		box-shadow: 0 4px 16px 0 rgba($black, 0.08);
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.header {
+		background-color: $white;
+		box-shadow: 0 4px 16px 0 rgba($black, 0.08);
+	}
+}

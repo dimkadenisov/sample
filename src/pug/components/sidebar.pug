@@ -1,0 +1,97 @@
+mixin sidebar(props = {})
+  include collapse
+  include products-group
+
+  .sidebar&attributes(attributes)
+    .sidebar__inner
+      +collapse({name: 'Лес контроль'})(class="collapse_opened")
+        +products-group({
+          name: 'Базовые продукты',
+          prdouctsGroupNameAttrs: {class: 'products-group-name_size_l'},
+          products: [
+            {
+              iconId: 'tree',
+              text: 'Лесопокрытые площадки',
+            },
+            {
+              iconId: 'tree',
+              text: 'Ситауционные карты местности',
+            },
+            {
+              iconId: 'tree',
+              text: 'Оценка параметров лесного фонда',
+            },
+          ]
+        })
+        +products-group({
+          name: 'Мониторинговые продукты',
+          prdouctsGroupNameAttrs: {class: 'products-group-name_size_l'},
+          products: [
+            {
+              iconId: 'tree',
+              text: 'Информация о естественных изменениях в лесном фонде',
+            },
+            {
+              iconId: 'tree',
+              text: 'Информация о хозяственной деятельности в лесном фонде',
+            },
+            {
+              iconId: 'tree',
+              text: 'Информация о незаконной деятельности в лесном фонде',
+            },
+          ]
+        })
+
+      +collapse({name: 'Эко-мониторинг'})
+        +products-group({
+          name: 'Базовые продукты',
+          prdouctsGroupNameAttrs: {class: 'products-group-name_size_l'},
+          products: [
+            {
+              iconId: 'tree',
+              text: 'Лесопокрытые площадки',
+            },
+            {
+              iconId: 'tree',
+              text: 'Ситауционные карты местности',
+            },
+          ]
+        })
+
+      +collapse({name: 'Лес контроль'})
+        +products-group({
+          name: 'Базовые продукты',
+          prdouctsGroupNameAttrs: {class: 'products-group-name_size_l'},
+          products: [
+            {
+              iconId: 'tree',
+              text: 'Лесопокрытые площадки',
+            },
+            {
+              iconId: 'tree',
+              text: 'Ситауционные карты местности',
+            },
+            {
+              iconId: 'tree',
+              text: 'Оценка параметров лесного фонда',
+            },
+          ]
+        })
+        +products-group({
+          name: 'Мониторинговые продукты',
+          prdouctsGroupNameAttrs: {class: 'products-group-name_size_l'},
+          products: [
+            {
+              iconId: 'tree',
+              text: 'Информация о естественных изменениях в лесном фонде',
+            },
+            {
+              iconId: 'tree',
+              text: 'Информация о хозяственной деятельности в лесном фонде',
+            },
+            {
+              iconId: 'tree',
+              text: 'Информация о незаконной деятельности в лесном фонде',
+            },
+          ]
+        })
